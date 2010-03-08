@@ -1,0 +1,34 @@
+<% content_for :title do %>
+	<h1><strong>Registros</strong></h1>
+	<%= cool_button('Novo Registro', new_resource_url) %>
+<% end %>
+
+<div class="t9 colborder">
+	
+	<table class="lista light" cellpadding="0" cellspacing="0" width="100%">
+	  <tr>
+			<th>Data</th>
+			<th>Descrição</th>
+			<th>Valor</th>
+			<th>&nbsp;</th>
+	  </tr>
+		<%= render :partial=>'registro', :collection=>@creditos %>
+	</table>
+
+</div>
+
+<div class="t9">
+	
+	<table class="lista light" cellpadding="0" cellspacing="0" width="100%">
+	  <tr>
+			<th>Data</th>
+			<th>Descrição</th>
+			<th>Valor</th>
+			<th>&nbsp;</th>
+	  </tr>
+		<%= render :partial=>'registro', :collection=>@debitos %>
+	</table>
+
+</div>
+
+<br/>

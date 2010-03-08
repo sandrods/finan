@@ -1,0 +1,9 @@
+  if @ok
+    
+    @nodos.each do |n|
+    page["page-#{n}"].remove      
+    end  
+
+  else
+    page.alert "Não foi possível remover item."
+  end

@@ -1,0 +1,32 @@
+div.textile-preview {
+	border: 1px solid #ddd;
+	background-color: #f8f8f5;
+	padding: 5px;
+	font-size: 12px;
+	line-height:18px;
+}
+
+div.textile-preview h1,
+div.textile-preview h2,
+div.textile-preview h3,
+div.textile-preview h4 {
+	border: 0;
+	color: #444;
+	font-weight: bold;
+	margin: 10px 0 6px 0;
+}
+
+div.textile-preview h1 { font-size: 16px }
+div.textile-preview h2 { font-size: 14px }
+div.textile-preview h3 { font-size: 13px }
+div.textile-preview h4 { font-size: 12px }
+
+div.textile-preview ul,
+div.textile-preview ol {
+	margin: 5px 0 5px 25px;
+}
+
+div.textile-preview p {
+	margin: 10px 0;
+}
+

@@ -1,0 +1,153 @@
+input, select {
+	padding: 3px;
+	vertical-align: middle;
+}
+
+div.form {
+	background-color: #fff;
+	margin-bottom: 10px;
+	color:#666666;
+	float:left;
+	background-color: #F8F8F5;
+	font-size:11px;	
+}
+
+div.form div.linha {
+	border-bottom:1px solid #DDDDDD;
+	float:left;
+	padding:0px ;
+
+}
+div.form div.space {
+	background-color: #FFFFFF;
+	height: 10px;
+	float: left;
+}
+
+div.form div.first {
+	border-top:1px solid #DDDDDD;
+}
+div.form label {
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight:bold;
+	margin: 8px 0 4px 8px;
+}
+
+div.form label.inline {
+	display: inline;
+	_font-weight: normal;
+	margin: 0;
+}
+
+div.form small {
+	color:#666666;
+	display:block;
+	font-size:9px;
+	font-weight:normal;
+	margin: -6px 0 4px 10px;
+}
+
+div.form input, div.form select, div.form p, div.form textarea {
+	margin: 0px 8px 8px 8px;
+}
+
+.form a { color: navy; font-weight:normal; border-bottom: 1px dotted navy;}
+.form a:hover { color: maroon; }
+
+/* =============================================
+	DIV.BUTTONS
+   ============================================= */
+div.buttons {
+	margin:10px 0 0 0;
+	/*background-color:#f8f8f5;*/
+	padding:6px;
+	border-top:2px dotted #b6cddb;
+	font-size:1.1em;
+
+}
+div.buttons a{
+	color:navy;
+}
+div.buttons a:hover{
+	color:maroon;
+}
+
+div.buttons input {    
+    padding: 8px;
+    font-size: 1.1em;  
+}
+
+.formError {
+	margin-left: 8px;
+	color: red;
+}
+
+.fieldWithErrors label {
+		color: #99000a;
+		font-weight: bold;
+}
+
+.fieldWithErrors input {
+	border: 1px dotted #c00;
+}
+
+div.errorExplanation {
+width: 400px;
+border: 1px dotted #c00;
+padding: 7px;
+padding-bottom: 12px;
+margin-bottom: 20px;
+background-color: #f8f8f5;
+}
+
+div.errorExplanation h2 {
+text-align: left;
+font-weight: bold;
+padding: 5px 5px 5px 15px;
+font-size: 12px;
+margin: -7px;
+background-color: #c00;
+color: #fff;
+}
+
+div.errorExplanation p {
+color: #333;
+margin:5px 0 0 0;
+padding: 5px;
+}
+
+div.errorExplanation ul li {
+font-size: 12px;
+list-style: square;
+margin-left: 20px;
+}
+
+div.error {
+	border: 1px dashed;
+	margin: 10px 10px 10px 0;
+	border-color: #DB3324;
+	padding:12px 12px 12px 30px;
+	color:#99000A;
+	font-size:11px;
+	font-weight:bold;
+	background-color:#FFF8F7;
+	background-image: url('../images/i-del.gif');
+	background-repeat:no-repeat;
+	background-position: 10px 13px;
+}
+
+div.notice {
+	border: 1px dashed;
+	margin: 10px 10px 10px 0;
+	border-color: #33CC33;
+	padding:12px 12px 12px 30px;
+	color:#339900;
+	font-size:11px;
+	font-weight:bold;
+	background-color:#F7FFF8;
+	background-image: url('../images/i-ok.gif');
+	background-repeat:no-repeat;
+	background-position: 10px 13px;
+}

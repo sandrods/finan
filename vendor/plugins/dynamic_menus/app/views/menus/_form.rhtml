@@ -1,0 +1,35 @@
+<div class='form'>
+
+	<div class='linha first'>
+		<div class='t16'>
+			<%= f.label :titulo %>
+			<%= f.text_field :titulo %>
+			<%= error_message_on 'nodo', 'titulo' %>
+		</div>
+	</div>
+
+	<div class='linha'>
+		<div class='t16'>
+			<%= f.label :recurso_id, 'Recurso' %>
+			<%= select('nodo', 'recurso_id', Recurso.to_select) %>
+			<%= error_message_on 'nodo', 'recurso_id' %>		
+		</div>
+	</div>
+
+	<div class='linha'>
+		<div class='t16'>
+			<%= f.label :controller %>
+			<%= f.text_field :controller %>
+			<%= error_message_on 'nodo', 'controller' %>
+		</div>
+	</div>
+
+	<div class='linha'>
+		<div class='t16'>
+			<%= f.label :controller, 'Action' %>
+			<%= f.text_field :action %>
+			<%= error_message_on 'nodo', 'action' %>
+		</div>
+	</div>
+
+</div>

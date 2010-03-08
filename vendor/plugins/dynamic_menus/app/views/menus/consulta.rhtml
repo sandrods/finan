@@ -1,0 +1,62 @@
+<%- content_for :full do -%>
+
+	<% @heading = "Editar Nodo" %>
+	<h2><%=@heading%></h2>
+
+<% end -%>
+
+<div class="t16 colborder">
+	
+<% form_for :nodo, @nodo1, :url=>{:action => 'salva', :id => @nodo1} do |f| %>
+  <%= render :partial => 'form', :locals=>{:f=>f} %>
+  <div class="buttons">
+  	<%= submit_tag 'Salvar' %>
+	ou
+	<%= link_to 'Cancelar', :action=>'index' %>
+  </div>
+<% end -%>
+
+</div>
+
+<% unless @nodo1.children.empty? -%>
+
+<div class="t7 last">
+	
+		<table border="0" cellspacing="0" width="100%" class="lista small">
+			<tr><th>Sub Menus</th></tr>
+			<tbody id='order_list'>
+			<%- @nodo1.children.each do |c| -%>
+			<tr id='nodos_<%=c.id%>'>
+				<td><%=image_tag('up-down.gif', :class=>'handle', :align=>'absmiddle')%><%= link_to(c.titulo, :action=>'consulta', :id=>c) %></td>
+			</tr>
+			<%- end -%>
+			</tbody>
+		</table>
+
+	<% javascript_tag do %>
+
+		jQuery(function($){
+
+			$('#order_list').sortable(
+		        {
+		          axis: 'y', 
+		          dropOnEmpty:false, 
+		          handle: '.handle', 
+		          items: 'tr',
+		          opacity: 0.4,
+		          scroll: true,
+					update: function(){
+					            $.ajax({
+					                type: 'post', 
+					                data: $('#order_list').sortable('serialize'), 
+					                dataType: 'script', 
+					                url: '<%= url_for(:controller=>:menus, :action=>:ordena) %>'})
+					            }
+				})
+
+		})
+
+	<% end %>
+	
+</div>
+<% end -%>

@@ -1,0 +1,58 @@
+<%
+count = page.children.count
+children = count > 0
+expanded = menu_expanded_rows.include?(page.id)
+padding_left = (level * 18) + 4
+
+children_class = children ? (expanded ? ' children-visible' : ' children-hidden') : ' no-children'
+
+spacer = image_tag('spacer.gif',:class => "spacer",:title => '', :align => 'center', :size=>'0x16')
+expander = children ? image_tag((expanded ? "collapse.png" : "expand.png"), :class => "expander", :alt => 'toggle children', :title => '', :align => 'center') : spacer
+
+icon_name = (page.parent_id != nil) ? "page.png" : "home.gif"
+
+icon = image_tag("#{icon_name}", :title => '', :align => 'center', :id=>"h-#{page.id}")
+titulo = (page.titulo!='-' ? page.titulo : page.titulo + ' <i>(separador)</i>' )
+title = %{ <span class="title expander">#{ titulo }</span>}
+
+spinner = image_tag("spinner.gif", :class => 'busy', :id => "busy-#{page.id}", :alt => "", :title => "", :align => "center", :style => 'display: none;')
+-%>
+    <tr id="page-<%= page.id %>" class="node level-<%= level %><%= children_class %>">
+      <td class="page" style="padding-left: <%= padding_left %>px">
+        <span class="w1">
+<% if simple -%>
+          <%= icon %>
+          <%= title %>
+<% else -%>
+          <%= expander %><%= icon %>
+          <%- if children -%>
+              <%= title %>
+              <%= spinner %>
+          <%- else -%>
+              <%= link_to(title, :action => 'consulta', :id => page.id.to_i) %>
+          <%- end -%>
+<% end -%>
+        </span>
+      </td>
+<% unless simple -%>
+      <td class="edit"><%= link_to("Editar", :action => 'consulta', :id => page.id.to_i) %></td>
+      <td class="add-child"><%= link_to image_tag('add-child.png', :alt => 'adiciona item'), { :action => "novo", :id_pai => page.id.to_i } %></td>    
+      <td class="remove"><%= link_to_remote image_tag('remove.png', :alt => 'remove item'), :url=>{ :action => "exclui", :id => page.id.to_i },:confirm => "Confirma remoção?", :loading=>"$('busy').show();" %></td>
+      <td width="10px"><%=link_to_remote(image_tag('edit-cut.gif', :alt => 'recorta item'),:url => { :action => "recorta", :id => page.id.to_i  })%></td>
+      <td width="30px"><%= link_to image_tag('edit-paste.png', :alt => 'cola item'), { :action => "cola", :id_pai => page.id.to_i } %></td>     
+<% end -%>
+    </tr>
+<% level = level + 1 -%>
+<%
+if expanded
+  page.children.each do |child|
+-%>
+<%= menu_render_node child, :level => level, :simple => simple -%>
+<%
+  end
+end
+-%>
+
+<%= draggable_element "page-#{page.id}", :ghosting=>true, :handle=>"'h-#{page.id}'"%>
+<%= drop_receiving_element "page-#{page.id}", :url=>{:action=>'drop', :drop_id=>page.id}%>
+

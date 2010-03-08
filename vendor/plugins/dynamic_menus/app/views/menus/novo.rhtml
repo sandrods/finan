@@ -1,0 +1,19 @@
+<% @heading = "Novo Nodo" %>
+<h2><%=@heading%></h2>
+
+<div class="t24">
+	
+<% form_for :nodo, @nodo1, :url=>{:action => 'inclui'} do |f| %>
+  <%= f.hidden_field("parent_id")%> 
+  <%= render :partial => 'form', :locals=>{:f=>f} %>
+  <div class="buttons">
+  	<%= submit_tag 'Salvar e Novo' %>
+  	<%= submit_tag 'Salvar' %>
+	ou
+	<%= link_to 'Cancelar', :action=>'index' %>
+  </div>
+<% end %>
+
+<%= error_messages_for 'nodo' %>
+
+</div>

@@ -1,0 +1,66 @@
+.side div{
+	font-size: 11px;	
+}
+
+.side h3 {
+	font-size: 12px;
+	font-weight: normal;
+	color:#478e99;
+	border-top: 1px dashed #dedede;
+	padding: 10px 0 0px 0;
+	margin: 10px 0 1px 0;
+}
+
+.side h3.first {
+	padding-top: 0px;
+	border-top-width: 0;
+	margin-top: 0;
+}
+
+.side em {
+	color: #999;
+	font-style:normal;
+}
+
+.side a {	color: blue; }
+.side a:hover { color: maroon; }
+
+.side table {
+	border: 0;
+	margin: 2px 0;
+}
+
+.side table td {
+	padding: 4px;
+	border-bottom: 1px dotted #ddd;	
+}
+
+.side table th{
+	font-weight: bold;
+	color: #aaa;
+	border-bottom: 1px dashed #dedede;
+}
+
+
+.smooth {
+	color: #999; 
+	font-style: italic;
+}
+
+.center {
+	text-align: center;
+}
+
+table.light {
+	border: 0;
+	border-top: 1px #bbb dotted;
+}
+
+table.light th {
+	background-color: white;
+	border-bottom: 1px #bbb dotted;		
+}
+
+table.light td {
+	border-bottom: 1px #bbb dotted;
+}

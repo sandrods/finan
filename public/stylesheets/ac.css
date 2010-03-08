@@ -1,0 +1,52 @@
+div.auto_complete {
+  width: 350px;
+  background: #fff;
+}
+div.auto_complete ul {
+  border:1px solid #888;
+  margin:0;
+  padding:0;
+  width:100%;
+  list-style-type: none;
+}
+div.auto_complete ul li {
+  margin:0;
+  padding:3px;
+  font-size: 11px;
+}
+div.auto_complete ul li.selected { 
+  background-color: #ffb; 
+}
+div.auto_complete ul strong.highlight { 
+  color: maroon;
+  text-decoration:underline;  
+  margin:0;
+  padding:0;
+}
+div.ac_box {
+    position: absolute;
+	padding: 20px 20px 0 20px;
+    width: 360px;
+    margin: 0px auto;
+    background-color: #f8f8f5;;
+    border: 1px solid #000;
+    z-index: 50;
+	
+}
+div.ac_box .obs{
+	padding: 0 15px 15px 15px;
+	color:#555;
+}
+div.ac_box .actions{
+	padding: 10px;
+	background-color: #ededed;
+	border-top: 1px solid #aaa;
+	margin: 24px -20px 0 -20px;
+	text-align:center;
+	color: #aaa;
+}
+span.ac_value {
+	margin: 1px 0 1px 10px;
+	padding: 2px;
+	border: 1px dotted #777;
+}

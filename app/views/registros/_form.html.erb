@@ -1,0 +1,35 @@
+	<div class="form">
+
+		<div class="linha first">
+			<div class="t3">
+				<%= f.label :data, "Data" %>			
+				<%= f.date_field :data, :class=>'t3' %>
+				<%= test_error_message_on 'registro', 'data' %>
+			</div>
+			<div class="t9">
+				<%= f.label :descricao, "Descrição" %>
+				<%= f.text_field :descricao, :class=>'t9'%>
+				<%= test_error_message_on 'registro', 'descricao' %>			
+			</div>
+
+			<div class="t4">
+				<%= f.label :valor, "Valor" %>
+				<%= f.currency_field :valor, :class=>'t4' %>
+				<%= test_error_message_on 'registro', 'valor' %>
+			</div>
+
+			<div class="t6">
+
+				<br/>
+				<%= f.radio_button :cd, "C" %>
+				<%= f.label :cd, "Crédito", :value=>"C", :class=>'inline'%>
+				<br/>
+				<%= f.radio_button :cd, "D" %>
+				<%= f.label :cd, "Débito", :value=>"D", :class=>'inline' %>
+				
+				<%= test_error_message_on 'registro', 'cd' %>
+			</div>
+
+		</div>
+
+	</div>

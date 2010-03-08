@@ -1,0 +1,130 @@
+#RB_overlay {
+  position: absolute;
+  z-index:100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height:100%;
+  background-color: #000;
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
+
+#RB_loading {
+  z-index: 101;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  padding-bottom: 30px;
+  text-align: center;
+  background: url(../images/redbox_spinner.gif) no-repeat bottom center;
+}
+
+#RB_window {
+  z-index: 102;
+  background-color: #FFFFFF;
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  position:fixed;
+  position: absolute;
+  width: 500px;  
+}
+
+/* =============================================
+	div#redbox
+   ============================================= */
+  
+div#redbox {
+    padding: 0px;
+    width: 500px;
+	background-color:#FFFFFF;
+}
+
+div#redbox form {
+    margin:0;
+    padding: 0;
+}
+
+div#redbox ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+div#redbox ul li{
+	font-size:10px;
+	padding:2px 2px 2px 20px;
+	border-bottom:1px solid #eee;
+	background-image:url(../images/adm/collapse.png);
+	background-repeat: no-repeat;
+	cursor:move;
+}
+
+div#redbox h2{
+	margin:0;
+	background-color:#99CC00;
+	color:#FFFFFF;
+	padding:15px;
+	font-size:16px;
+	font-weight:bold;
+	border-bottom: 1px solid #739800;
+}
+
+div#redbox div#content{
+	float:none;
+	margin:0px;
+	padding:15px;
+	display: block;
+	width: 450px;
+}
+
+div#redbox div#content table.form {
+	margin:10px;
+}
+
+div#redbox div#content h2 {
+    background-color:white;    
+	margin: 0;
+	color: #666666;
+	font-size:1.1em;
+	padding: 5px;
+	border: 0;
+}
+div#redbox div#content h3 {
+    padding: 5px;
+    border: 0;    
+}    
+div#redbox div#content h4 {
+    background-color:#f8f8f5;
+    border: 0;
+    color: #666666;
+    padding: 10px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+/* =============================================
+	div#content div.buttons
+   ============================================= */
+div#redbox div#buttons {
+	border-top: 1px solid #ccc;
+	margin: 0;
+	background-color:#f8f8f5;
+	padding:10px;
+	font-size:11px;
+	font-weight: normal;
+	text-align:center;
+}
+div#redbox div#buttons a{
+	font-weight: bold;
+	color:navy;
+}
+div#redbox div#buttons a:hover{
+	color:maroon;
+}

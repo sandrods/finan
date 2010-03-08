@@ -1,0 +1,7 @@
+<tr <%= cycle('', 'class="even"') %>>
+  <td><%= registro.data.try(:strftime, '%d/%m/%Y')%></td>
+  <td width="100%"><%= registro.descricao %></td>
+  <td align='right' ><%= registro.valor %></td>
+  
+   <td><%=link_to image_tag('trash.gif'), resource_url(registro), :confirm => 'Tem certeza?', :method => :delete %></td>
+ </tr>

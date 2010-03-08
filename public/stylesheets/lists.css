@@ -1,0 +1,92 @@
+/* =============================================
+	TABLE.LISTA
+   ============================================= */
+table.lista {
+	border:1px solid #ddd;
+	border-bottom-width:0;
+	margin:20px 0 20px 0;
+}
+table.lista caption {
+	border-bottom: 2px solid #777;
+	color: #555;
+	font-size: larger;
+	font-weight: bold;
+	margin: 0;
+	padding: 3px;
+}
+table.lista tr.even{
+	background-color:#F4FAFB;
+}
+
+table.lista td{
+	font-size:1.1em;
+	padding:8px;
+	border-bottom:1px solid #ddd;
+}
+table.lista td.light{
+	font-size:0.9em;
+	color: #888;
+	padding:8px;
+	border-bottom:1px solid #ddd;
+}
+table.lista th{
+	padding:8px;
+	font-size:1.1em;
+	font-weight: bold;
+	color:#666666;
+	background-color:#E7F1DA;
+	border-bottom:1px solid #ddd;
+}
+
+table.lista a{
+	color: #007BC4;
+	font-size:1.1em;
+	font-weight:normal;
+	margin: 0 5px 0 5px;
+}
+table.lista a:hover{
+	color:#bbb;
+}
+
+div.light{
+	font-size:0.9em;
+	color: #888;
+}
+
+table td em {
+	font-weight: bold;
+	color:#555;
+}
+/* =============================================
+	TABLE.SMALL
+   ============================================= */
+table.small {
+	margin:5px 0 5px 0;
+}
+table.small td{
+	font-size:1.0em;
+	padding:5px;
+}
+table.small th{
+	padding:5px;
+	font-size:1.0em;
+}
+table.small a{
+	font-size:1.0em;
+	margin: 0 2px 0 2px;
+}
+
+/* =============================================
+	UL.LISTA
+   ============================================= */
+
+ul.lista {
+	list-style-type: none;
+	list-style-position: inside;
+	margin: 5px 0 5px 10px;
+}
+
+ul.lista li {
+	font-size: 11px;
+	margin: 3px 0 0 0;
+}

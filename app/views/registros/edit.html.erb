@@ -1,0 +1,14 @@
+<% content_for :title do %>
+	<h1><strong>Edição de Registro</strong></h1>
+<% end %>
+
+<%= error_messages_for :registro %>
+
+<% form_for(:registro, :url => resource_url, :html => { :method => :put }) do |f| %>
+  <%= render :partial => "form", :locals => { :f => f } %>
+
+	<div class="buttons clear">
+		<%= f.submit 'Salvar' %> ou <%= link_to 'Voltar para Lista', collection_url, :class=>'link' %>
+	</div>
+<% end %>
+

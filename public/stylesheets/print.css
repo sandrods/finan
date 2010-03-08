@@ -1,0 +1,37 @@
+body {background: none;	}
+#box {}
+#box #header {background: none;}
+#box #header h1 {font-size: 2.2em;}
+#box #header h1 span.printonly {display: inline; color: #333;border-bottom: 1px solid #333;}
+#box #header img {display: none;}
+#box #header #menu {}
+#box #header #menu #nav ul {margin: 0; padding: 0;}
+#box #header #menu #nav li {display: none;}
+#box #header #menu #nav li.active {display: block; margin: 0; padding: 0;}
+#box #header #menu #nav li.active a {background: #222; color: #fff}
+#box #header #sub-menu {border: 1px solid #777; background: #ccc; display: none;}
+#box #header #sub-menu h3 a {display: none;}
+#box #header #sub-menu h3 a.active {display: inline; background-image: none; color: #222;}
+#box #header #sub-menu h3 span {display: none;}
+#box #title_wrapper #title h1 {font-family: Helvetica, Arial, sans-serif; font-size: 1.1em; color: #999;}
+#box #title_wrapper a.button {display: none;}
+#container div.colborder {border-right: 1px solid #bbb;}
+#container {border: none  !important;}
+#container table.lista {font-family: Helvetica, Arial, sans-serif; border: 1px solid #777; border-right: none; border-bottom: none;}
+#container table.lista thead {display: table-header-group;}
+#container table.lista tfoot {display: table-header-group;}
+#container table.lista tr {}
+#container table.lista th {background: #333; color: #fff; border: 1px solid #777; border-left: none; border-top: none;}
+#container table.lista th.noprint {display: none;}
+#container table.lista td {border: 1px solid #777; border-left: none; border-top: none;}
+#container table.lista td.noprint {display: none;}
+#container table.lista td a {text-decoration: none; color: #000;}
+#container div.form {background: none;}
+#container div.form input { background: #f8f8f5; border: 1px solid #999;}
+#container div.form select { background: #f8f8f5; border: 1px solid #999;}
+#container div.printpanel {font-size: 1.1em !important;}
+#container table.transf {font-size: inherit;}
+#container a.link {display: none;}
+#container div.buttons {display:none;}
+#box #footer {display: none;}
+

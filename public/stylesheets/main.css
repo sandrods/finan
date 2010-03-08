@@ -1,0 +1,104 @@
+@import url("reset.css");
+@import url("grid.css");
+
+@import url("layout.css");
+@import url("menu.css");
+
+@import url("lists.css");
+@import url("forms.css");
+
+@import url("buttons.css");
+@import url("redbox.css");
+@import url("ac.css");
+
+@import url("preview.css");
+
+@import url("theme.olive.css");
+
+@import url("app.css");
+
+.right {
+	text-align: right;
+}
+.fright {
+	float: right;
+}
+
+.col_2 {
+	float: left;
+	width: 400px;
+}
+
+#container a.link { 
+	border: 1px solid #ccc;
+	padding: 1px 3px;
+	color:#888;
+	background-color: #f8f8f5;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 10px;
+}
+#container a.link:hover {
+	border: 1px solid #478E99;
+	color:white;
+	background-color: #478E99;
+	text-decoration:none;
+}
+
+#container a.link_small { 
+	border: 1px solid #ccc;
+	padding: 0 3px;
+	color:#888;
+	background-color: #f8f8f5;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#container a.link_small:hover {
+	border: 1px solid #478E99;
+	color:white;
+	background-color: #478E99;
+	text-decoration:none;
+}
+
+a.download {
+	border-width:0;
+	font-weight: bold;
+	padding: 5px 15px;
+	color:#fff;
+	background-color: #6485B4;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	font-size: 10px;
+}
+a.download:hover {
+	color:white;
+	background-color: #7EB5FD;
+	text-decoration:none;
+}
+
+img.handle {
+	cursor: move;
+}
+
+.ordem span, .pergunta_bullet {
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	background-color: #f2f2f2;
+	color: #bbb;		
+	padding: 1px 3px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.bullet_error {
+	background-color: #FFF8F7;
+	color: #99000a;
+	border: 1px solid #99000a;
+}
+
+

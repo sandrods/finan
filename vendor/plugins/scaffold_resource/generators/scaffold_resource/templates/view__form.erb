@@ -1,0 +1,11 @@
+<div class="form">
+<%- for attribute in attributes -%>
+	<div class="linha">
+		<div class="t14">
+		<%%= f.label :<%= attribute.name %>, <%= attribute.column.human_name %> %>
+		<%%= f.<%= attribute.field_type %> :<%= attribute.name %>, :class=>'t10' %>
+		<%%= test_error_message_on '<%= singular_name %>', '<%= attribute.name %>' %>
+		</div>
+	</div>
+<% end -%>
+</div>
